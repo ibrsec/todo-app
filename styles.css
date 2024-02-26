@@ -71,9 +71,12 @@ h1 {
     align-items: center;
     justify-content: space-between;
     background-color: #f9f9f9;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2.5rem;
     border-radius: 4px;
     margin-bottom: 0.5rem;
+
+    position: relative;
+    cursor: pointer;
 }
 
 .task-item:last-child {
@@ -98,6 +101,46 @@ h1 {
 .task-item .delete-btn:hover {
     background-color: #e64a19;
 }
+
+
+.task-item::before{
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #908888;
+    border: 2px solid #e64a19;
+    position: absolute;
+    left: 7px;
+}
+
+.task-item.done {
+    text-decoration: line-through;
+}
+
+
+.task-item.done button.delete-btn {
+    color: black;
+}
+
+
+
+.task-item.done::before{
+    content: "✔︎";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #4caf50;
+    border: 2px solid #dfe619;
+    position: absolute;
+    left: 7px;
+}
+
+
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -127,3 +170,5 @@ h1 {
 
     .task-item {
         background-color: #555
+    }
+}
