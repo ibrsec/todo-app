@@ -1,0 +1,129 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#add-task-form {
+    display: flex;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+#new-task-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    background-color: #f5f5f5;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#new-task-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#add-task-form button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#tasks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.task-item:last-child {
+    margin-bottom: 0;
+}
+
+.task-item .delete-btn {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0.75rem;
+}
+
+.task-item .delete-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.task-item .delete-btn:hover {
+    background-color: #e64a19;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+    }
+
+    .container {
+        background-color: #444;
+    }
+
+    h1 {
+        color: #fff;
+    }
+
+    #add-task-form {
+        border-bottom-color: #555;
+    }
+
+    #new-task-input {
+        background-color: #444;
+        color: #fff;
+    }
+
+    #add-task-form button {
+        background-color: #6c6;
+    }
+
+    .task-item {
+        background-color: #555
