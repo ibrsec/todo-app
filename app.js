@@ -49,7 +49,7 @@ addBtn.onclick = (e) => {
 //add task enter event
 input.onkeydown = (e) => {
   if (e.keyCode == 13) {
-    addBtn.clcik();
+    addBtn.click();
   }
   if (e.keyCode == 46) {
     if (itemContainer.lastElementChild) {
