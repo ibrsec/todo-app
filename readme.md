@@ -15,7 +15,7 @@
     <a href="https://github.com/ibrsec/todo-app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://ibrsec.github.io/todo-app/">View Demo</a>
+    <a href="https://todo-app-tau-rose.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/ibrsec/todo-app/issues">Report Bug</a>
     ·
@@ -60,7 +60,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![todo-app](./img/p.gif)](https://ibrsec.github.io/todo-app/)
+[![todo-app](./img/p.gif)](https://todo-app-tau-rose.vercel.app/)
 
 
 <p align="left">
